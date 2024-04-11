@@ -26,4 +26,8 @@ abstract class FlutterFileReceiverPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  void receiveFileUrl(Function(String) onReceived){
+    throw UnimplementedError('receiveFileUrl() has not been implemented.');
+  }
 }

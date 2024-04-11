@@ -10,6 +10,9 @@ class MockFlutterFileReceiverPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  void receiveFileUrl(Function(String p1) onReceived) => Future.value('file:///path/to/file');
 }
 
 void main() {

@@ -5,4 +5,8 @@ class FlutterFileReceiver {
   Future<String?> getPlatformVersion() {
     return FlutterFileReceiverPlatform.instance.getPlatformVersion();
   }
+
+  void receiveFileUrl(Function(String) onReceived) {
+    FlutterFileReceiverPlatform.instance.receiveFileUrl(onReceived);
+  }
 }

@@ -14,4 +14,14 @@ class MethodChannelFlutterFileReceiver extends FlutterFileReceiverPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
+
+  @override
+  void receiveFileUrl(Function onReceived) {
+    methodChannel.setMethodCallHandler((call) async {
+      if (call.method == 'receiveFileUrl') {
+        final String fileUrl = call.arguments;
+        onReceived(fileUrl);
+      }
+    });
+  }
 }
