@@ -1,6 +1,5 @@
 package com.sargeraswang.flutter_file_receiver
 
-import androidx.annotation.NonNull
 import android.util.Log
 import java.io.File
 import java.io.FileOutputStream
@@ -19,7 +18,6 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.PluginRegistry.Registrar
 
 
 /** FlutterFileReceiverPlugin */
