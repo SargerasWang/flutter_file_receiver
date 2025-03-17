@@ -24,9 +24,6 @@ allprojects {
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-// ✅ Flutter 插件必须加这一句
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-
 android {
     compileSdk 35
 
